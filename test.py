@@ -1,6 +1,6 @@
 import oss2
 
-auth = oss2.Auth("LTAI5t8ZTQeawbsiHn5G2CvV","qv2zWdWUT9XOXYPXWwMgc9a7KaXA6X")
+auth = oss2.Auth("XXX","YYY")
 endpoint = "oss-cn-hongkong.aliyuncs.com"
 bucketName1 = "davetest1"
 bucket = oss2.Bucket(auth, endpoint, bucketName1)
