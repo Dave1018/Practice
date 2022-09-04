@@ -1,8 +1,16 @@
-import redis 
+import redis
 
-#r = redis.StrictRedis(host='localhost', port=6379, db=0)
-r = redis.Redis.__new__
-r.set('key1', "value1")
-print(r['key1'])
-print(r.get('key1'))
-print(type(r.get('key1')))
+r = redis.StrictRedis(host='localhost', port=6379, db=0)
+
+r.set('name','Dave')
+print(r.get('name'))
+
+r.append('name',' and Hope')
+print(r.get('name'))
+
+print(r.strlen('name'))
+
+print(r.getrange('name', 3, 10))
+
+
+
